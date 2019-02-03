@@ -1,6 +1,6 @@
 exports.run = (client, message, args) => {
 
-    if (message.author.id !== "296048748877053953")  return message.channel.send('Sorry, only the owner can use this command.');
+    if (message.author.id !== "201460488037466112")  return message.channel.send('Sorry, only the owner can use this command.');
 
     try {
         delete require.cache[require.resolve(`./${args[0]}.js`)];
