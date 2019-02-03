@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const botconfig = require("./botconfig.json");
 const client = new Discord.Client(); 
 
-const prefix = '-' 
+const prefix = '%' 
 const ownerID = '201460488037466112'; 
 const db = require('quick.db');
 
