@@ -3,12 +3,12 @@ const botconfig = require("./botconfig.json");
 const client = new Discord.Client(); 
 
 const prefix = '-' 
-const ownerID = '296048748877053953'; 
+const ownerID = '201460488037466112'; 
 const db = require('quick.db');
 
 const serverStats = {
-  guildID: '491773464076877825',
-  ticketCategoryID: '492083224869077032'
+  guildID: '541286273223098368',
+  ticketCategoryID: '541742094629339157'
 }
 
 // Tickets
@@ -88,7 +88,7 @@ if (support) {
             .addField('Support User', `${supportUser.tag}`)
             .addField('Closer', message.author.tag)
             .setColor(botconfig.red)
-        const staffChannel = client.channels.get('491796908084559883'); //Create a log channel and put id here
+        const staffChannel = client.channels.get('541291124669677602'); //Create a log channel and put id here
         staffChannel.send(inEmbed);
     }
     const embed4 = new Discord.RichEmbed()
@@ -134,4 +134,4 @@ client.on('ready', async () => {
 
 client.on('ready', () => console.log('Launched!'));
 
-client.login('NDkyMTY5MDU0OTIxMDMxNjgw.DoSf2g.WSG-fFQDeioouj6Oegpni7z_vZo');
+client.login(process.env.BOT_TOKEN)
