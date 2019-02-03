@@ -1,0 +1,15 @@
+{
+  "name": "ScheduleTraining",
+  "description": "ScheduleTraining {DEV}",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "enmap": "^2.6.3",
+    "node-opus": "0.3.0",
+    "opusscript": "0.0.6"
+  }
+}
