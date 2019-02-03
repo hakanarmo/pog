@@ -19,7 +19,7 @@ bot.login(process.env.BOT_TOKEN)
 bot.on("ready", async() =>{
     bot.user.setActivity("Message to Schedule Training")
 
-  const LogChannelID = "469602420092305420"
+  const LogChannelID = "541291124669677602"
 
   var currentDate = new Date().toLocaleDateString();
   var currentTime = new Date().toLocaleTimeString();
@@ -61,8 +61,8 @@ bot.on("message", async message =>{
     let active = await TicketSystem.get(`support_${message.author.id}`);
 
     //Get the GUILD ID
-    let guild = bot.guilds.get('361690793154576394'); // CHANGE ME DEPENDING ON THE SERVER
-
+    let guild = bot.guilds.get('541286273223098368'); // CHANGE ME DEPENDING ON THE SERVER
+      
     //variables
     let channel, found = true;
 
@@ -85,7 +85,7 @@ bot.on("message", async message =>{
       //Create Channel Stuff
       channel = await guild.createChannel(`${message.author.username} - ${message.author.discriminator}`);
 
-      await channel.setParent('469687457672200193'); // CHANGE ME DEPENDING ON THE SERVER
+      await channel.setParent('541738461640654868'); // CHANGE ME DEPENDING ON THE SERVER
       console.log(channel.parentID);
       await channel.setTopic(`ong!complete to close the ticket | Support for ${message.author.tag} | ID: ${message.author.id}`);
       await channel.overwritePermissions(theTeam, {'READ_MESSAGES': true, 'SEND_MESSAGES': false,'MANAGE_MESSAGES': false,})
